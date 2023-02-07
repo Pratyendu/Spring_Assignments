@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/visitors-count")
 public class UrlController {
 
-    //@Autowired
-    private UrlService urlService; // dependency injection
+    private UrlService urlService;
 
     public UrlController(UrlService urlService) {
         this.urlService=urlService;
