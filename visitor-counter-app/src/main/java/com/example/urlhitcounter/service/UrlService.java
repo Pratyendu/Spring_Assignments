@@ -8,10 +8,9 @@ import java.util.Map;
 
 @Service
 public class UrlService {
-
     static Map<String,Integer> map=new HashMap<>();
-    public Visit getVisits(String username) { // business logic
-
+    
+    public Visit getVisits(String username) { 
         int count=map.getOrDefault(username,0)+1;
         map.put(username,count);
 
